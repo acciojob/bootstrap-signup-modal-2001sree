@@ -6,26 +6,32 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	</head>
 	<body>
-		<form>
-		<div>
-			<div class="modal-header">
-				<button type="button" class="bg-danger" class="border-top">Sign Up</button>
-				<div class="invisible">
-				<h3 class="modal-title" id="exampleModalLabel"></h3>
-				<button type="button">close</button>
-				<label for="email" class="form-label">Email address</label>
-				<input type="email" class="form-control" placeholder="Enter email">
-				<small class="btn-small">Your information is safe with us.</small>
-				<label for="password" class="form-label" >Password</label>
-				<input type="password" class="form-control" placeholder="Password">
-				<label for="Confirm password" class="form-label" >Confirm Password</label>
-				<input type="password" class="form-control" placeholder="Confirm Password">
-					<button class="btn-primary">submit</button>
-			</div>
-		</div>
-		</div>
-	</form>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Sign Up</button>
+
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Create Account</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> </button>
+      </div>
+      <div class="modal-body">
+		  <label for="email" class="form-label">Email Address</label>
+		  <input type="email" class="form-control" placeholder="Enter email">
+		   <label for="Password" class="form-label">Password</label>
+		  <input type="password" class="form-control" placeholder="Password">
+		   <label for="password" class="form-label">Confirm Password</label>
+		  <input type="password" class="form-control" placeholder="Confirm password">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</body>
 </html>
